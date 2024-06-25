@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BidCalculator.Core\BidCalculator.Data.csproj" />
+    <ProjectReference Include="..\BidCalculator.ServiceDefaults\BidCalculator.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\BidCalculator.Services\BidCalculator.Services.csproj" />
+  </ItemGroup>
+
+</Project>
