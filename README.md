@@ -1,6 +1,10 @@
 ## Application Preview
 ![image](https://github.com/uabarahona/bidcalculator/assets/15148088/8d63446d-9b9e-40e1-a41c-1caea7b6aabc)
 
+## Demo
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/w2GCVh9pfJ8/0.jpg)](http://www.youtube.com/watch?v=w2GCVh9pfJ8)
+
 ## Description
 This application was developed as part of an interview process. The tech stack used includes:
 - .NET for the API
