@@ -21,7 +21,7 @@ const totalCostData = ref<CarCostResponse | undefined>()
 async function handleBidRequestChange(bidRequest: BidRequest) : Promise<void>
 {
   try {
-      const response = await fetch("api/calculateTotalCost", {
+      const response = await fetch("api/totalCost", {
         headers: {
           'Content-Type': 'application/json'
         },

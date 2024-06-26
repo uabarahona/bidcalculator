@@ -23,7 +23,7 @@ public static class ConfigurationExtensions
                         Id = default,
                         Type = CarType.Common,
                         Title = "Basic Fee",
-                        Description = "minimum $10 and maximum $50",
+                        Description = "10%, minimum $10 and maximum $50",
                         FeeRule = new PercentageWithMinMaxFeeRule()
                         {
                             PercentageFee = 10,
@@ -36,7 +36,7 @@ public static class ConfigurationExtensions
                         Id = default,
                         Type = CarType.Luxury,
                         Title = "Basic Fee",
-                        Description = "minimum 25$ and maximum 200$",
+                        Description = "10%, minimum 25$ and maximum 200$",
                         FeeRule = new PercentageWithMinMaxFeeRule()
                         {
                             PercentageFee = 10,
