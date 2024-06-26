@@ -25,6 +25,8 @@ Once the prerequisites are installed, you can open the project in Visual Studio 
 ### Considerations
 The goal of this project was to create a quick MVP of a use case. Due to this, certain trade-offs have been made:
 
+- PRs has not been created for this project, but commits are very descriptive and show the real progression and how I would have oppened PRs if it was needed
+
 On the front-end:
 - Few libraries like `headlessUI` and `vueUse` have been added to increase speed for the MVP. In a real-world scenario, after the MVP gets accepted, this would be one of the technical discussions to address.
 
