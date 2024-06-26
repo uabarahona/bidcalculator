@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "start": "vite",
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
@@ -15,6 +16,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.22",
+    "@vueuse/core": "^10.11.0",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },
