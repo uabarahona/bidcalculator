@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BidCalculator.Core\BidCalculator.Data.csproj" />
+    <ProjectReference Include="..\BidCalculator.Data\BidCalculator.Data.csproj" />
     <ProjectReference Include="..\BidCalculator.ServiceDefaults\BidCalculator.ServiceDefaults.csproj" />
     <ProjectReference Include="..\BidCalculator.Services\BidCalculator.Services.csproj" />
   </ItemGroup>

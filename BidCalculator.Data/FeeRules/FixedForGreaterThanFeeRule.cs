@@ -13,5 +13,5 @@ public class FixedForGreaterThanFeeRule : IFeeRule
 
 
     /// <inheritdoc />
-    public decimal CalculateFee(decimal amount) => amount > MinimumAmount ? amount : 0m;
+    public decimal CalculateFee(decimal amount) => amount > MinimumAmount ? FixedFee : 0m;
 }

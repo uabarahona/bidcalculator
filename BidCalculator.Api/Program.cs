@@ -1,9 +1,13 @@
+using BidCalculator.Api;
 using BidCalculator.Data;
+using BidCalculator.Services;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
+builder.Services.AddScoped<CarBidService>();
+builder.Services.AddCors();
 
 // Add services to the container.
 
@@ -27,7 +31,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+await app.EnsureDatabaseIsProperlyCreated();
+
 app.UseHttpsRedirection();
+app.UseCors(static builder =>
+    builder.AllowAnyMethod()
+        .AllowAnyHeader()
+        .AllowAnyOrigin());
 
 app.UseAuthorization();
 
