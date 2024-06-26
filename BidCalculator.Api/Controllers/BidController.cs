@@ -12,7 +12,7 @@ public class BidController(CarBidService _carBidService) : ControllerBase
     /// </summary>
     /// <param name="carBidRequest">The bid information</param>
     /// <returns>The total cost along with fees</returns>
-    [HttpPost("/totalCost", Name = "CalculateTotalCarCost")]
+    [HttpPost("/bids/totalCost", Name = "CalculateTotalCarCost")]
     public async Task<ActionResult<TotalCarResponse>> CalculateTotalCarCost(CarBidRequest carBidRequest)
     {
         return Ok(await _carBidService.CalculateCarTotalCostAsync(carBidRequest));
